@@ -79,6 +79,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll docker box
         run: |
+          if [ -d _site ]
+          then
+            echo " - Removing old _site directory contents"
+            rm -rf "$PWD"/_site/
+          fi
           mkdir _site
           docker run --rm -v "$PWD"/site:/usr/src/app -v "$PWD"/_site:/_site starefossen/github-pages jekyll build -d /_site
       - name: Upload artifact

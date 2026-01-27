@@ -38,8 +38,8 @@ asciidoctor -a linkcss -a copycss -e -o - "$SCRIPT_DIR/specification/E-ARK-CITS-
 echo " - Generating site PDF with asciidoctor."
 asciidoctor-pdf -o site/pdf/E-ARK-CITS-3DHM.pdf specification/E-ARK-CITS-3DHM.adoc
 
-echo " - Publishing site to GitHub Pages."
-docker run --rm -v "$PWD"/site:/usr/src/app -v "$PWD"/_site:/_site starefossen/github-pages jekyll build -d /_site
+# echo " - Publishing site to GitHub Pages."
+# docker run --rm -v "$PWD"/site:/usr/src/app -v "$PWD"/_site:/_site starefossen/github-pages jekyll build -d /_site
 
 echo " - Cleaning up site directory and copying spec-publisher site..."
 git clean -f "$SCRIPT_DIR/specification/"
