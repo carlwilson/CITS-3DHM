@@ -71,7 +71,7 @@ jobs:
           RELEASE_DATE: ${{ steps.cut_release_date.outputs.substring }}
           RELEASE_VERSION: ${{ steps.cut_release_version.outputs.substring }}
         with:
-          templates: "metadata.yaml"
+          templates: "specification/E-ARK-CITS-3DHM.adoc"
       - name: Build the spec-publisher project & produce site artifacts
         run: |
           ./create_site.sh

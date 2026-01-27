@@ -1,9 +1,9 @@
 // E-ARK Content Information Type Specification for 3D Heritage Models - 3D HM
 = E-ARK CITS eHealth1: Content Information Type Specification for 3D Heritage Model Data
 Stephen Mackey
-:revnumber: v${1.0.0}
+:revnumber: ${RELEASE_VERSION}
 :revdate: ${RELEASE_DATE}
-:revremark: Firet publication
+:revremark: First publication
 :doctype: book
 :imagesdir: figs
 :source-highlighter: rouge
