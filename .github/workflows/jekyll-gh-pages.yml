@@ -38,8 +38,8 @@ jobs:
       - if: github.event.release != null
         name: set release vars from release event
         run: |
-          echo "LONG_DATE=${{ github.event.release.published_at }}" >> $GITHUB_ENV
-          echo "LONG_VERSION=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
+          echo "LONG_DATE=${{ github.event.release.published_at }}" >> "$GITHUB_ENV"
+          echo "LONG_VERSION=${{ github.event.release.tag_name }}" >> "$GITHUB_ENV"
       - if: github.event.release == null
         name: Get previous release
         id: previousrelease
@@ -51,15 +51,15 @@ jobs:
       - if: github.event.release == null
         name: set release vars from previous release
         run: |
-          echo "LONG_DATE=${{ steps.previousrelease.outputs.created_at }}" >> $GITHUB_ENV
-          echo "LONG_VERSION=${{ steps.previousrelease.outputs.tag_name }}" >> $GITHUB_ENV
+          echo "LONG_DATE=${{ steps.previousrelease.outputs.created_at }}" >> "$GITHUB_ENV"
+          echo "LONG_VERSION=${{ steps.previousrelease.outputs.tag_name }}" >> "$GITHUB_ENV"
       - name: Cut release date
         uses: bhowell2/github-substring-action@1.0.2
         id: cut_release_date
         with:
-          value: ${{ env.LONG_DATE }}
+          value: $LONG_DATE
           length_from_start: 10
-      - name: Cut release versopm
+      - name: Cut release version
         uses: bhowell2/github-substring-action@1.0.2
         id: cut_release_version
         with:
