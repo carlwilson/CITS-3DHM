@@ -1,0 +1,28 @@
+- title: "Specification"
+  href: "/"
+
+- title: "PDFS"
+  href: "/pdf/"
+
+- title: "Profile"
+  href: "/profile/"
+
+- title: "Guidelines"
+  href: "/guidelines/"
+
+- title: "Examples"
+  href: "/examples/"
+
+- title: "About"
+  href: "/"
+  subcategories:
+    - subtitle: "Release Notes"
+      subextref: "/release-notes/"
+    - subtitle: "Acknowledgements"
+      subextref: "/acknowledgements/"
+    - subtitle: "DILCIS"
+      subextref: "https://dilcis.eu/"
+    - subtitle: "On GitHub"
+      subextref: "https://github.com/DILCISBoard/CITS-3DHM"
+    - subtitle: "Download"
+      subextref: "https://github.com/DILCISBoard/CITS-3DHM/archive/master.zip"

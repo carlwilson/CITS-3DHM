@@ -1,7 +1,7 @@
 // E-ARK Content Information Type Specification Guideline for 3D Heritage Models - 3D HM
 = E-ARK CITS 3D HM: Content Information Type Specification Guideline for 3D Heritage Model Data
 Stephen Mackey
-:revnumber: v${1.0.0}
+:revnumber: v${RELEASE_VERSION}
 :revdate: ${RELEASE_DATE}
 :revremark: First publication
 :doctype: book
