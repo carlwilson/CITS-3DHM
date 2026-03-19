@@ -20,7 +20,7 @@ cp -rf "$SCRIPT_DIR/spec-publisher/site/"* "$SCRIPT_DIR/spec-publisher/res/md/fi
 cp -rf "$SCRIPT_DIR/profile" "$SCRIPT_DIR/examples" "$SCRIPT_DIR/specification/figs" "$SCRIPT_DIR/pdf" "$SCRIPT_DIR/site/"
 
 echo " - spec-publisher: generating specification requirement tables, appendices, etc."
-# mvn package -f spec-publisher/pom.xml 
+mvn package -f spec-publisher/pom.xml 
 java -jar "$SCRIPT_DIR/spec-publisher/target/mets-profile-processor-0.2.0-SNAPSHOT.jar" \
      -f "$SCRIPT_DIR/specification.yaml" \
      -o "$SCRIPT_DIR/specification" \
