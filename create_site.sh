@@ -18,6 +18,7 @@ echo " - copying files to site directory..."
 cp -rf "$SCRIPT_DIR/spec-publisher/site/"* "$SCRIPT_DIR/spec-publisher/res/md/figs" "$SCRIPT_DIR/site/"
 # Copy remaining project collaterel to the site
 cp -rf "$SCRIPT_DIR/profile" "$SCRIPT_DIR/examples" "$SCRIPT_DIR/specification/figs" "$SCRIPT_DIR/pdf" "$SCRIPT_DIR/site/"
+cp -rf "$SCRIPT_DIR/guideline/figs" "$SCRIPT_DIR/spec-publisher/res/md/figs" "$SCRIPT_DIR/site/guidelines/"
 
 echo " - spec-publisher: generating specification requirement tables, appendices, etc."
 mvn package -f spec-publisher/pom.xml 
@@ -39,7 +40,6 @@ echo " - Copying spec-publisher collateral to guidelines directory."
 cp -rf "$SCRIPT_DIR/spec-publisher/res/md/common-intro.adoc" "$SCRIPT_DIR/spec-publisher/res/md/figs" "$SCRIPT_DIR/guideline/"
 
 echo " - spec-publisher: generating guidelines, appendices, etc."
-# mvn package -f spec-publisher/pom.xml 
 java -jar "$SCRIPT_DIR/spec-publisher/target/mets-profile-processor-0.2.0-SNAPSHOT.jar" \
      -f "$SCRIPT_DIR/guideline.yaml" \
      -o "$SCRIPT_DIR/guideline"
