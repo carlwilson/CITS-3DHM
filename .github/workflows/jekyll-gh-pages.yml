@@ -72,15 +72,15 @@ jobs:
           RELEASE_VERSION: ${{ steps.cut_release_version.outputs.substring }}
         with:
           templates: "specification/E-ARK-CITS-3DHM.adoc"
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
       - name: Build the spec-publisher project & produce site artifacts
         run: |
           ./create_site.sh
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll docker box
-        run: |
-          mkdir _site
-          docker run --rm -v "$PWD"/site:/usr/src/app -v "$PWD"/_site:/_site starefossen/github-pages jekyll build -d /_site
+      # - name: Build with Jekyll docker box
+      #   run: |
+      #     mkdir _site
+      #     docker run --rm -v "$PWD"/site:/usr/src/app -v "$PWD"/_site:/_site starefossen/github-pages jekyll build -d /_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
 

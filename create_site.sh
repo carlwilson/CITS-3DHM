@@ -50,8 +50,8 @@ asciidoctor -a linkcss -a copycss -e -o - "$SCRIPT_DIR/guideline/E-ARK-guideline
 echo " - Generating guidelines PDF with asciidoctor."
 asciidoctor-pdf -o site/pdf/CITS-3DHM-GUIDELINES.pdf guideline/E-ARK-guideline-3DHM.adoc
 
-# echo " - Jekykll converting site for GitHub pages in _site directory."
-# docker run --rm -v "$PWD"/site:/usr/src/app -v "$PWD"/_site:/_site starefossen/github-pages jekyll build -d /_site
+echo " - Jekykll converting site for GitHub pages in _site directory."
+docker run --rm -v "$PWD"/site:/usr/src/app -v "$PWD"/_site:/_site starefossen/github-pages jekyll build -d /_site
 
 echo " - Cleaning up specification and site directories."
 git clean -f "$SCRIPT_DIR/specification/"
