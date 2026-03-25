@@ -1,4 +1,3 @@
-
 ---
 title: E-ARK CITS 3D Heritage Model PDF Versions
 layout: page
