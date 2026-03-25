@@ -17,7 +17,7 @@ echo " - copying files to site directory..."
 # Copy spec-publisher artifacts to the site
 cp -rf "$SCRIPT_DIR/spec-publisher/site/"* "$SCRIPT_DIR/spec-publisher/res/md/figs" "$SCRIPT_DIR/site/"
 # Copy remaining project collaterel to the site
-cp -rf "$SCRIPT_DIR/profile" "$SCRIPT_DIR/examples" "$SCRIPT_DIR/specification/figs" "$SCRIPT_DIR/pdf" "$SCRIPT_DIR/site/"
+cp -rf "$SCRIPT_DIR/profile" "$SCRIPT_DIR/examples" "$SCRIPT_DIR/schema" "$SCRIPT_DIR/specification/figs" "$SCRIPT_DIR/pdf" "$SCRIPT_DIR/site/"
 cp -rf "$SCRIPT_DIR/guideline/figs" "$SCRIPT_DIR/spec-publisher/res/md/figs" "$SCRIPT_DIR/site/guidelines/"
 
 echo " - spec-publisher: generating specification requirement tables, appendices, etc."

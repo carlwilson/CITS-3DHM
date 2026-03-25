@@ -13,6 +13,9 @@
 - title: "Examples"
   href: "/examples/"
 
+- title: "Schema"
+  href: "/schema/"
+
 - title: "About"
   href: "/"
   subcategories:

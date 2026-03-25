@@ -1,7 +1,8 @@
 ---
 title: CSIP METS Profile
+layout: page
 ---
-# CITS 3D HM METS Profiles
+# {{ page.title }}
 
 ## Latest
 

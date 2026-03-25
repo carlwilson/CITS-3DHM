@@ -1,7 +1,8 @@
 ---
 title: E-ARK CITS 3D Heritage Model PDF Versions
+layout: page
 ---
-# {page.title}
+# {{ page.title }}
 
 ## v1.0
 
