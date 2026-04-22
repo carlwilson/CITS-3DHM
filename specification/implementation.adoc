@@ -6,13 +6,14 @@ The CITS 3DHM inherits its package structure from the E-ARK Common Specification
 .Example Information Package Folder Structure
 image::figs/fig_3_package_structure.svg[]
 
+
 Multiple formats of the same 3D model which have been created through transformation events may be included in a single package and held in individual Representations (for example proprietary BIM models and STEP-IFC derivations). Information related to a transformation event (software used, parameters etc) should be included in the relevant documentation/paradata folder and details of the event recorded in PREMIS.
 
 3D models of the same physical object can be created via different means (e.g scanning vs photogrammetry) and it is a matter for the repository to determine if it considers these models to be the same or a different intellectual entity and thus whether they should be in the same or different information packages. Should models created via different methods be included in the same package then Rights information and Paradata may differ for each model and should therefore be held at Representation level. Submission Agreements between Producer and Archive should detail whether different capture/creation versions of the same physical object are permitted in a single information package.
 
 It is strongly recommended that as much documentation as possible related to the creation, context, provenance and terms of use of the model is included in the information package such as for example: licence terms, model creation environment, project overview, model creation and transformation information. The CITS 3DHM recommends the inclusion of such information related to the production of the model in a documentation/paradata sub-folder and related to archiving and use of the model in a documentation/other sub-folder. If model Authentication information (such as data quality rules) is included, then this can also be included in the optional documentation/authentication folder.
 
-Further information on model Authentication can be found in the CITS 3DPM at: https://github.com/DILCISBoard/CITS-3DPM/tree/rel/v1.0.0. The inclusion of a Submission Agreement in the information package is  recommended and should be located in the documentation/other sub-folder.
+Further information on model Authentication can be found in the CITS 3DPM at: https://dilcis.eu/content-types/cits-3d-product-model-data. The inclusion of a Submission Agreement in the information package is  recommended and should be located in the documentation/other sub-folder.
 
 Individual folder structures are recommended within each representation/data folder to provide a structure appropriate to the model format used. 
 
@@ -67,7 +68,7 @@ Details of the hardware and software used in the creation and transformation and
 Quality information may be included in some specialised metadata schemas or if unstructured text can be included in the documentation/paradata folder of each representation.
 
 ===== Authentication Information
-If Authentication documentation exists, then the optional documentation/authentication subfolder can be used at both root and representation level. Authentication events can be recorded within PREMIS and examples are given in this CITS 3DHM specification and accompanying Guideline as to how this can be done (see https://github.com/DILCISBoard/CITS-3DPM/tree/rel/v1.0.0).
+If Authentication documentation exists, then the optional documentation/authentication subfolder can be used at both root and representation level. Authentication events can be recorded within PREMIS and examples are given in this CITS 3DHM specification and accompanying Guideline as to how this can be done (see https://dilcis.eu/content-types/cits-3d-product-model-data)
 
 ===== Processing Information
 Processing information unless specifically encoded according to specialised schemas or ontologies can be included in the documentation/paradata sub-folder either at root or Representation level.

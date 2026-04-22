@@ -7,7 +7,7 @@ CSIP specifies that METS files should be located at the root of the package fold
 The root METS file must adhere to the requirements of the CSIP and Information Package specifications. In addition, there are specific requirements for CITS 3DHM and in some cases, the level of the CSIP or package requirements have been increased (but never decreased).
 
 ===== Root METS Root Element
-CITS 3DHM does not change or extend any of the requirements for the Root METS root element. 
+CITS 3DHM does not change or extend any of the requirements for the Root METS root element. Information is given below regarding the specific content type attributes to be used in CITS 3D HM.
 
 
 

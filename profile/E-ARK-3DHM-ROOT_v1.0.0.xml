@@ -269,7 +269,7 @@
           <p>All Paradata Documentation located in the documentation/paradata folder is placed in one or more file group elements with mets/fileSec/fileGrp/@USE attribute value ‘Paradata Documentation’ taken from the vocabulary.</p>
           <dl>
             <dt>METS XPATH</dt>
-            <dd>mets/fileSec/fileGrp/@ADMID</dd>
+            <dd>mets/fileSec/fileGrp/@USE='Paradata Documentation'</dd>
             <dt>Cardinality</dt>
             <dd>1..n</dd>
             <dt>REF:CSIP-v2.2.0</dt>
@@ -285,7 +285,7 @@
           <p>All Authentication Documentation located in the documentation/authentication folder is placed in one or more file group elements with mets/fileSec/fileGrp/@USE attribute value ‘Authentication Documentation’ taken from the vocabulary.</p>
           <dl>
             <dt>METS XPATH</dt>
-            <dd>mets/fileSec/fileGrp/@ADMID</dd>
+            <dd>mets/fileSec/fileGrp/@USE='Authentication Documentation'</dd>
             <dt>Cardinality</dt>
             <dd>1..n</dd>
             <dt>REF:CSIP-v2.2.0</dt>
@@ -301,7 +301,7 @@
           <p>All Other Documentation located in the documentation/other folder is placed in one or more file group elements with mets/fileSec/fileGrp/@USE attribute value ‘Other Documentation’ taken from the vocabulary.</p>
           <dl>
             <dt>METS XPATH</dt>
-            <dd>mets/fileSec/fileGrp/@ADMID</dd>
+            <dd>mets/fileSec/fileGrp/@USE='Other Documentation'</dd>
             <dt>Cardinality</dt>
             <dd>1..n</dd>
             <dt>REF:CSIP-v2.2.0</dt>
