@@ -757,7 +757,7 @@
     </mets:structMap>
   </Example>
   <Appendix NUMBER="1" LABEL="Example of a whole METS document describing a submission information package following CITS 3D HM (cits-3dhm_v1_0).">
-    <mets:mets xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd             http://www.w3.org/1999/xlink http://www.loc.gov/standards/mets/xlink.xsd             https://DILCIS.eu/XML/METS/CSIPExtensionMETS              https://earkcsip.dilcis.eu/schema/DILCISExtensionMETS.xsd              https://DILCIS.eu/XML/METS/SIPExtensionMETS              https://earksip.dilcis.eu/schema/DILCISExtensionSIPMETS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS" xmlns:sip="https://DILCIS.eu/XML/METS/SIPExtensionMETS" OBJID="Product_Model_Package" TYPE="OTHER" csip:OTHERTYPE="Product Model Data" csip:CONTENTINFORMATIONTYPE="cits3dhm_v1_0" LABEL="Product Model Data from Landivisiau Engineering SARL" PROFILE="https://cits3dhm.dilcis.eu/profile/E-ARK-eHealth1-ROOT-v1-0-0.xml">
+    <mets:mets xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd             http://www.w3.org/1999/xlink http://www.loc.gov/standards/mets/xlink.xsd             https://DILCIS.eu/XML/METS/CSIPExtensionMETS              https://earkcsip.dilcis.eu/schema/DILCISExtensionMETS.xsd              https://DILCIS.eu/XML/METS/SIPExtensionMETS              https://earksip.dilcis.eu/schema/DILCISExtensionSIPMETS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS" xmlns:sip="https://DILCIS.eu/XML/METS/SIPExtensionMETS" OBJID="Heritage_Model_Package" TYPE="OTHER" csip:OTHERTYPE="3D Heritage Model Data" csip:CONTENTINFORMATIONTYPE="cits3dhm_v1_0" LABEL="3D Heritage Model Data from Fonds Landernau" PROFILE="https://cits3dhm.dilcis.eu/profile/E-ARK-3dhm-ROOT-v1-0-0.xml">
       <mets:metsHdr CREATEDATE="2024-04-24T14:37:49.602+01:00" LASTMODDATE="2024-04-24T14:37:49.602+01:00" RECORDSTATUS="NEW" csip:OAISPACKAGETYPE="SIP" xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS" xmlns:mets="http://www.loc.gov/METS/">
         <mets:altRecordID TYPE="SUBMISSIONAGREEMENT">http://submissionagreement.le.fr/dnr331-1144-2011/20120711/</mets:altRecordID>
         <mets:altRecordID TYPE="PREVIOUSSUBMISSIONAGREEMENT">http://submissionagreement.le.fr/dnr330-1122-2009/20110613/</mets:altRecordID>
@@ -819,18 +819,18 @@
             <mets:FLocat xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="schemas/METS.xsd" xlink:type="simple" LOCTYPE="URL" />
           </mets:file>
         </mets:fileGrp>
-        <mets:fileGrp xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS" ID="filegrp-representation-original-product-model" USE="representations/original-product-model" ADMD="digiprov-pm-file1 rights-pm-file1" DMDID="dmd-ead-file" csip:CONTENTINFORMATIONTYPE="cits3dhm_v1_0">
+        <mets:fileGrp xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS" ID="filegrp-representation-original-point-cloud-model" USE="representations/original-point-cloud-model" ADMD="digiprov-pm-file1 rights-pm-file1" DMDID="dmd-ead-file" csip:CONTENTINFORMATIONTYPE="cits3dhm_v1_0">
           <mets:file ID="file-ptr-repmets1" MIMETYPE="xml" SIZE="1338744" CREATED="2024-04-24T14:33:23.617+01:00" CHECKSUM="B1CF59678A21C2805370536AB1097735D7E9F3FDDDCAE3757426ED85F6350A48" CHECKSUMTYPE="SHA-256">
-            <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="representations/original-product-model/mets.xml" xmlns:xlink="http://www.w3.org/1999/xlink" />
+            <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="representations/original-point-cloud-model/mets.xml" xmlns:xlink="http://www.w3.org/1999/xlink" />
           </mets:file>
         </mets:fileGrp>
-        <mets:fileGrp ID="filegrp-representation-step-model" USE="representations/step-product-model" ADMD="digiprov-pm-file1 rights-pm-file2" DMDID="dmd-ead-file" csip:CONTENTINFORMATIONTYPE="cits3dhm_v1_0" xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS">
+        <mets:fileGrp ID="filegrp-representation-derived-mesh-model" USE="representations/derived-mesh-model" ADMD="digiprov-pm-file1 rights-pm-file2" DMDID="dmd-ead-file" csip:CONTENTINFORMATIONTYPE="cits3dhm_v1_0" xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS">
           <mets:file ID="file-ptr-repmets2" MIMETYPE="xml" SIZE="1338744" CREATED="2018-04-24T14:33:23.617+01:00" CHECKSUM="B1CF59678A21C2805370536AB1097735D7E9F3FDDDCAE3757426ED85F6350A48" CHECKSUMTYPE="SHA-256">
-            <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="representations/step-product-model/mets.xml" xmlns:xlink="http://www.w3.org/1999/xlink" />
+            <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="representations/derived-mesh-model/mets.xml" xmlns:xlink="http://www.w3.org/1999/xlink" />
           </mets:file>
         </mets:fileGrp>
       </mets:fileSec>
-      <mets:structMap ID="struct-map-product-model-root" TYPE="PHYSICAL" LABEL="CSIP">
+      <mets:structMap ID="struct-map-heritage-model-root" TYPE="PHYSICAL" LABEL="CSIP">
         <mets:div ID="struct-map-example-div" LABEL="cits-3dhm-example">
           <mets:div ID="struct-map-metadata-div" LABEL="Metadata" DMDID="dmd-ead-file" ADMD="digiprov-premis-file1 rights-premis-file1 rights-premis-file1" />
           <mets:div ID="struct-map-documentation-div" LABEL="Documentation">
@@ -847,11 +847,11 @@
           <mets:div ID="struct-map-schemas-div" LABEL="Schemas">
             <mets:fptr FILEID="filegrp-schemas" />
           </mets:div>
-          <mets:div ID="struct-map-reps-sub-div1" LABEL="Representations/original-product-model">
-            <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/original-product-model/METS.xml" xlink:title="file-grp-rep-original-product-model" xmlns:xlink="http://www.w3.org/1999/xlink" />
+          <mets:div ID="struct-map-reps-sub-div1" LABEL="Representations/original-point-cloud-model">
+            <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/original-point-cloud-model/METS.xml" xlink:title="file-grp-rep-original-point-cloud-model" xmlns:xlink="http://www.w3.org/1999/xlink" />
           </mets:div>
-          <mets:div ID="struct-map-reps-sub-div2" LABEL="Representations/derived-product-model">
-            <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/derived-product-model/METS.xml" xlink:title="file-grp-rep-derived-product-model" xmlns:xlink="http://www.w3.org/1999/xlink" />
+          <mets:div ID="struct-map-reps-sub-div2" LABEL="Representations/derived-mesh-model">
+            <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/derived-mesh-model/METS.xml" xlink:title="file-grp-rep-derived-mesh-model" xmlns:xlink="http://www.w3.org/1999/xlink" />
           </mets:div>
         </mets:div>
       </mets:structMap>

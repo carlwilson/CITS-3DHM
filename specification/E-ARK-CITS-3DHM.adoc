@@ -32,13 +32,15 @@ include::introduction.adoc[]
 include::specification.adoc[] 
 include::implementation.adoc[]
 include::use_of_mets.adoc[]
+
+include::tables/metadata-root-root-requirements.adoc[]
+
 include::root_mets_header_element.adoc[]
 include::root_mets_dmd.adoc[]
 include::root_mets_amd.adoc[]
-include::root_mets_filesec.adoc[]  
+include::root_mets_filesec.adoc[]
 
 include::tables/metadata-root-filesec-requirements.adoc[] 
- 
 
 include::root_mets_structural_map.adoc[] 
 
@@ -47,7 +49,6 @@ include::tables/metadata-root-structmap-requirements.adoc[]
 include::representation_mets_element.adoc[] 
 
 include::tables/metadata-rep-root-requirements.adoc[] 
-
 
 include::representation_mets_header_element.adoc[] 
 
